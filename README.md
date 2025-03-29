@@ -81,4 +81,32 @@ print(df)
 today_date = str(datetime.today().strftime('%Y-%m-%d'))
 df.to_csv(rf'C:\my_work\IPhone_Price_Everyday\CSV_files\Price_on_{today_date}.csv')
 ```
+## **Power BI Dashboard & Visualizations** 📈
+
+The Power BI dashboard includes the following visualizations:
+
+![Power BI Interface](https://github.com/user-attachments/assets/755178fd-801c-4caf-b262-950e407c7c1f)
+
+
+- **Line Graph for Price Trends** 📊  
+  - Displays a **line graph for each iPhone series** (iPhone X to iPhone 16).  
+  - Shows **price changes over time** to track trends.
+
+- **Price Comparison Table** 📋  
+  - Compares **today’s price** to the **lowest and highest recorded prices**.  
+  - Helps identify the best time to buy.
+
+- **Filters for Better Insights** 🔍  
+  - **Storage Type:** Filter by different storage options (e.g., 128GB, 256GB, etc.).  
+  - **Condition:** Filter between **New** and **Renewed** iPhones.
+
+## **📌 Conclusion** 🚀  
+
+This project provides a **comprehensive solution** for tracking **iPhone prices on Amazon** over time. By leveraging **Python for web scraping**, **Pandas for data processing**, and **Power BI for visualization**, it offers **real-time insights** into price fluctuations.  
+
+With features like **historical price trends**, **daily price comparisons**, this dashboard helps users make **informed purchasing decisions**.  
+
+Moving forward, future improvements such as **automating Power BI refresh, expanding to other e-commerce platforms, and adding price drop alerts** will enhance the system further.  
+
+📊 **Whether you're a data enthusiast or a smart shopper, this project provides valuable insights into iPhone pricing trends!**
 
