@@ -12,6 +12,7 @@ soup = BeautifulSoup(page.text, 'html.parser')
 
 all_listitems = soup.find_all('div', role="listitem")
 
+# for getting name and price tag
 clean_name = []
 clean_price = []
 
@@ -19,6 +20,7 @@ for item in all_listitems:
     name_tag = item.find("h2")
     price_tag = item.find("span", class_="a-price-whole")
     
+    # ensuring we are getting the product that have price listed
     if name_tag and price_tag:
         name = name_tag.text.strip()
         clean_name.append(name)
@@ -40,5 +42,5 @@ print(df)
 
 # today
 today_date = str(datetime.today().strftime('%Y-%m-%d'))
-# save data to csv file
+# save data to csv file with today's date with it
 df.to_csv(rf'C:\my_work\IPhone_Price_Everyday\CSV_files\Price_on_{today_date}.csv')
